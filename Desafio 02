@@ -1,0 +1,10 @@
+#Crie um script que leia o dia, o mês e o ano de nascimento de uma pessoa e mostra uma mensagem com a data formatada.
+
+nome=input('Insira seu nome: ')
+
+dia=input("Informe o dia que você nasceu: ")
+mes=input("Informe o mês que você nasceu: ")
+ano=input("Informe o ano que você nasceu: ")
+
+print("Bem-vindo ","."," É um prazer tê-lo como nosso cliente, {}".format(nome),"!")
+print("Você nasceu em ", dia,"/",mes,"/", ano)
