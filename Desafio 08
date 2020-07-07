@@ -1,0 +1,6 @@
+#Escreva um programa que leia, em metros, um valor e o exiba convertido em centímetros e milímetros
+
+m=float(input("Informe um valor em metros: "))
+mm=m*1000
+c=m*100
+print("{} em Centímetros é: {:.0f}\n {} em Milímetros é: {:.0f} ".format(m,c,m,mm))
