@@ -1,0 +1,5 @@
+#Crie um programa que converta reais em dólar (considere a cotação do dólar 4,09)
+
+r=float(input("Digite um valor em R$: "))
+d=r*4.09
+print("{}, em dólar, é: {}".format(r,d))
