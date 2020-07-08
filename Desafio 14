@@ -1,0 +1,7 @@
+‘’’
+Crie um algoritmo que converta a temperatura de graus Celsius para Fahrenheit
+‘’’
+c=float(input("Informe uma temperatura em C°: "))
+f=32+(c*(9/5))
+print("{} em Fahrenheit é {}".format(c,f))
+
