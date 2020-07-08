@@ -1,0 +1,7 @@
+“””
+Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, de acordo com a porcentagem de aumento.
+“””
+s=float(input("Informe o salário do colaborador: "))
+a=float(input("Informe a procentagem de aumento: "))
+r=s+(s*a/100)
+print("O salário de {}, com o aumento de {}, passou a ser {}".format(s,a,r))
