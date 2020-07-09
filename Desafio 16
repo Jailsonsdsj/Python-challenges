@@ -1,0 +1,23 @@
+‘’’
+Crie um programa que leia um número real qualquer e mostre na tela a sua porção inteira. 
+Ex.: Digite um número: 6.127
+A parte inteira desse número é: 6
+‘’’
+
+#Usando o Truncate:
+
+import math
+n = float(input("Digite um valor: "))
+print("O valor digitado foi {} e sua porção inteira é {}".format(n, math.trunc(n)))
+
+#Usando o floor:
+
+from math import floor, ceil
+n=float(input("Digite um número: "))
+print("O valor digitado foi {} e sua porção inteira é: {}".format(n,floor(n)))
+
+#Sem utilizar a biblioteca:
+
+num = float(input("Digite um valor: "))
+print("O valor digitado foi {} e sua porção inteira é {}".format(n,int(n)))
+
