@@ -1,0 +1,12 @@
+‘’’
+Faça um programa que leia um ângulo qualquer e mostre, na tela, o valor do seno, cosseno e tangente desse ângulo
+‘’’
+
+from math import sin,cos,tan,radians
+angle=float(input("Insert the measure of the angle: "))
+print("Sen: {:.2f}".format(sin(radians(angle))))
+print("Cos: {:.2f}".format(cos(radians(angle))))
+print("Tan: {:.2f}".format(tan(radians(angle))))
+ 
+ 
+
