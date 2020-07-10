@@ -1,0 +1,11 @@
+‘’’
+Um professor que sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que o ajude, lendo e mostrando o nome dos alunos.
+‘’’
+
+Resolução:
+
+from random import choice
+names=input("Enter the name of four students separated by ';': ")
+names=names.split(";")
+print(choice(names[0:4]))
+
