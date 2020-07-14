@@ -1,0 +1,18 @@
+‘’’
+Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome ‘SANTO’.
+‘’’
+
+#Método 1
+
+city=str(input("Insert your city name: "))
+name=city.split()
+if name[0]=='Santo':
+    print("True")
+else:
+   print("False")
+
+#Método 2
+
+city=str(input("Insert your city name: ")).strip()
+print(city[:5] == 'Santo')
+
