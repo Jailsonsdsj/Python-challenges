@@ -1,0 +1,13 @@
+‘’’
+Faça um programa que leia uma frase pelo teclado e mostre:
+Quantas vezes a letra “A”
+Em que posição ela aparece a primeira vez
+Em que posição ela aparece a última vez
+‘’’
+
+frase=input("Informe uma frase: ")
+n=frase.lower()
+print("Quantidade de letras A: ", n.count('a'))
+print("Exibida pela primeira vez na posição", n.find('a'))
+print("Exibida pela última vez em", n.rfind('a'))
+
