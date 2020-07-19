@@ -1,0 +1,13 @@
+‘’’
+Desenvolva que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo 
+‘’’
+lines=str(input("Enter the measurement of the 3 lines, respectively: ")).split()
+a=int(lines[0]);b=int(lines[1]);c=int(lines[2])
+if (a>b-c) & (a<b+c):
+   print("The measures form a trinangle")
+elif (b>a-c) & (b<b+c):
+   print("The measures form a trinangle")
+elif (c>b-a) & (c>a+b):
+   print("The measures form a trinangle")
+else:
+   print("The measures do not form a trinangle")
