@@ -1,0 +1,64 @@
+‘’’
+Escreva um programa que leia um número qualquer e peça para o usuário escolher qual será a base de conversão:
+
+1 para binário
+2 para octal
+3 para hexadecimal
+‘’’
+
+tot = []
+i=res=0
+n=int(input("Type a number: "))
+ 
+resp=int(input("Choose a conversion method: \n"
+              "1 - Binary \n"
+              "2 - Octal \n"
+              "3 - Hexadecimal"))
+#to binary
+if resp == 1:
+   while n != 1:
+       res = n % 2
+       n = n // 2
+       tot.append(res)
+   tot.append(1)
+   print(tot[::-1])
+ 
+#to Octal
+if resp == 2:
+   while True:
+       if (n <= 8):
+           # tot.pop()
+           tot.append(n)
+           break
+       else:
+           res=n%8
+           n=n//8
+           tot.append(res)
+   print(tot[::-1])
+ 
+#to hexadecimal
+if resp == 3:
+   while True:
+       if (n <= 16):
+           # tot.pop()
+           tot.append(n)
+           break
+       else:
+           res = n % 16
+           n = n // 16
+           if res == 10:
+               tot.append("A")
+           elif res == 11:
+               tot.append("B")
+           elif res == 12:
+               tot.append("C")
+           elif res == 13:
+               tot.append("D")
+           elif res == 14:
+               tot.append("E")
+           elif res == 15:
+               tot.append("F")
+           else:
+               tot.append(res)
+   print(tot[::-1])
+ 
