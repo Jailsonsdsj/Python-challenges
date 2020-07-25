@@ -1,0 +1,18 @@
+Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com sua idade, 
+
+Se ele ainda vai se alistar ao serviço militar
+Se é a hora de se alistar
+Se já passou do tempo do alistamento 
+
+O programa também deverá mostrar o tempo que falta ou que passou do prazo.
+
+year=int(input("Enter the year you were born:  "))
+age=2020-year
+if age == 18:
+   print("Time to enlist! ")
+elif age>18:
+   delayed=age-18
+   print(f'You enlistment has been delayed for {delayed} year(s)!')
+elif age<18:
+   enlist=18-age
+   print(f'{enlist} year(s) left for you to enlist!')
