@@ -1,0 +1,64 @@
+data=[]
+info=[]
+i=0
+ 
+#0 name
+#1 registration
+#2 test 1
+#3 test 2
+#4 average
+#5 final result
+ 
+while True:
+   print("-"*30)
+   studentName=str(input("Student's name: " )).capitalize()
+   info.append(studentName)
+   info.append(str(input("Registration: ")))
+   info.append(float(input("Test 1: ")))
+   info.append(float(input("Test 2: ")))
+ 
+   med=(info[2]+info[3])/2
+   info.append(med)
+ 
+   if med >= 7.0:
+       info.append("Aproved")
+   elif med<7.0 and med>5.9:
+       info.append("Recovery")
+   elif med<=5.9:
+       info.append("Disapproved")
+ 
+   data.append(info[:])
+   info.clear()
+ 
+   print("-" * 30)
+   resp=int(input("Data entered \n1 - Registrer note\n2 - Show general banknotes\n3 - Individual banknote"))
+   if resp!=1:
+       break
+ 
+if resp==2:
+ 
+   print("-" * 30)
+   print("General banknotes")
+   print("-" * 30)
+ 
+   for i in range (len(data)):
+       print(f'Bulletin number:  {i}')
+       print(f'Name: {data[i][0]}')
+       print(f"Final result: {data[i][4]} - {data[i][5]}")
+       print("-" * 30)
+ 
+if resp==3:
+   print("-" * 30)
+   print("Individual banknote")
+   student_src=str(input("Enter studant name or registration number: ")).capitalize()
+   print("-" * 30)
+   for i in range(len(data)):
+       if data[i][0] == student_src or data[i][1] == student_src:
+           print(f'Name: {data[i][0]} \n'
+                 f'Registration number: {data[i][1]} \n')
+           print(f'Test 1:     {data[i][2]} \n'
+                 f'Test 2:     {data[i][3]} \n'
+                 f'Average:    {data[i][4]} \n'
+                 f'Final Result: {data [i][5]} \n')
+       else:
+           print("Data not found")
