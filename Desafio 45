@@ -1,0 +1,59 @@
+‘’’
+Crie um programa que faça o computador jogar pedra, papel e tesoura com você.
+‘’’
+
+import random
+from time import sleep
+ 
+p1 = p2 = 0
+choose = ('empty', 'Rock', 'Paper', 'Scissors')
+items = ('empty', 'Rock', 'Paper', 'Scissors')
+while True:
+   pc = random.randint(1, 3)
+   i=int(input("Choose a item:\n [1]Rock  [2]Paper [3]Scissors"))
+   print("Let... " , end="")
+   sleep(1)
+   print("it... ", end="")
+   sleep(1)
+   print("go!")
+   sleep(1)
+ 
+   if i==0:
+       print("Bye!")
+       break
+ 
+   print("-"*20)
+   print(f'You played: {choose[i]}')
+   print(f'The computer played:{items[pc]}')
+   print("-" * 20)
+   if pc==1:
+       if i == 1:
+           print("A tie!")
+       elif i == 2:
+           print("You win!")
+           p1+=1
+       elif i == 3:
+           print("The computer win!")
+           p2+=1
+   elif pc==2:
+       if i == 1:
+           print("The computer win!")
+           p2 += 1
+       elif i == 2:
+           print("A tie!")
+       elif i == 3:
+           print("You win!")
+           p1 += 1
+   elif pc==3:
+       if i == 1:
+           print("You win!")
+           p1 += 1
+       elif i == 2:
+           print("The computer win!")
+           p2 += 1
+       elif i == 3:
+           print("A tie!")
+ 
+   print(f'Scoreboard: You {p1} X {p2} Computer')
+   print("-" * 20)
+ 
