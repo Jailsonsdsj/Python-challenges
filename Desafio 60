@@ -1,0 +1,12 @@
+‘’’
+Faça um programa que leia um número qualquer e mostre seu fatorial.
+Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
+‘’’
+i=tot=0
+num=int(input("Type a number: "))
+fat=1
+i=num
+while i>0:
+   fat*=i
+   i -= 1
+print(fat)
